@@ -168,11 +168,11 @@ td,th{
 
 
 tr:nth-child(even),table.list thead>tr{
-    background-color:gray
+    background-color:#262b40;
    
 }
 tr:nth-child(odd),table.list thead>tr{
-    background-color: #262b40;
+    background-color: gray;
     color: whitesmoke;
     
    
