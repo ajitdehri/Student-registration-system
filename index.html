@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <h2 class="heading"><span class="heading-color">Student</span> Resistration <span class="heading-color">Record</span> </h2>
+
+    </header>
+
+    <section class="container" >
+        
+        <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+            
+            <div class="input-box">
+                <input type="text" placeholder="Full-Name" name="fullname" required id="fullname">
+                <input type="number" placeholder="Class" name="class" required id="class">
+                <input type="number" placeholder="Roll-No" name="rollno" required id="rollno">
+                <input type="number" placeholder="Student-Id" name="studentid" required id="studentid">
+                <input type="email" placeholder="email" name="email" required id="email">
+                <input type="number" placeholder="Mobile-No" name="mob" required id="mob">
+                <span><a href="#record"  class="btn2">Record </a></span>
+
+            </div>
+
+            <input type="submit" value="submit" class="btn1">
+            
+        </form>
+
+
+        
+
+    </section>
+
+
+    <section class="container" onsubmit="callValue()" id="record">
+        <h2 class="heading">Record <span class="heading-color">section</span></h2>
+        
+
+        <table class="list" id="Student-List">
+            <thead>
+                <tr>
+                    <th>Full-Name</th>
+                    <th>Class</th>
+                    <th>Roll-No</th>
+                    <th>Student-Id</th>
+                    <th>email</th>
+                    <th>mobile-No</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+      
+
+
+    </section>
+
+
+    <footer class="footer" onsubmit="callValue()" id="record">
+       
+        <h2 class="heading"> <a href="#home"  class=" btn3" >top</a></h2>
+
+
+</footer>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
